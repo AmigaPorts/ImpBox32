@@ -1,3 +1,3 @@
 (sym_lib_table
-  (lib (name plipesp)(type Legacy)(uri ${KIPRJMOD}/plipesp.lib)(options "")(descr ""))
+  (lib (name "plipesp")(type "Legacy")(uri "${KIPRJMOD}/plipesp.lib")(options "")(descr ""))
 )
