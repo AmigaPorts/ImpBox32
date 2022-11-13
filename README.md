@@ -10,6 +10,15 @@ The primary purpose is for use with [IMP](http://aminet.net/package/mus/play/imp
 ### Flashing the device
 
 Flash the device with firmware from `firmware_impbox` directory - you can use RX/TX pin header for this using typical ESP32 tooling.
+Assuming that your COM port is /dev/ttyUSB0:
+
+```plain
+esptool --chip esp32 --port /dev/ttyUSB0 --baud 921600 --before default_reset --after hard_reset write_flash -z --flash_mode dio --flash_freq 80m --flash_size 4MB \
+0x1000 bootloader.bin \
+0x8000 partitions.bin \
+0xe000 boot_app0.bin \
+0x10000 fw_36.bin
+```
 
 The IMP firmware automatically updates itself, so you need to flash it manually only once.
 
