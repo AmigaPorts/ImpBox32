@@ -36,6 +36,7 @@ to configure WiFi network, use following commands:
 ```plain
 imp3 ibcs your_ssid
 imp3 ibcp your_password
+imp3 ibcc your_key
 ```
 
 Device stores the key as well as network parameters in its flash memory, hence configuration needs to be done only once.
