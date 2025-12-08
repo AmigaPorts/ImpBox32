@@ -27,8 +27,8 @@ The IMP firmware automatically updates itself, so you need to flash it manually 
 The firmware makes use of SD1306 or compatible OLED I2C display - be sure to connect one at least during registration and configuration phase.
 
 The IMP firmware requires inputing registration key.
-Getting the key is free but they are issued per-person to limit users during beta phase.
-Contact Juen on EAB for getting one.
+If you've built the device for yourself, contact Juen on EAB for getting one.
+If you're considering building and selling a batch of devices, ask Juen first to discuss terms on getting keys for them.
 See messages displayed on OLED for detailed instructions on how to enter your key.
 
 to configure WiFi network, use following commands:
